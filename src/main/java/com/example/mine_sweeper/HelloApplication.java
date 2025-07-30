@@ -203,9 +203,9 @@ public class HelloApplication extends Application {
             content.setAlignment(Pos.CENTER);
             content.getChildren().addAll(finalBomb);
             VBox finalContent = content;
-            timeline.getKeyFrames().add(new KeyFrame(Duration.millis(500 * (i + 1)), _ -> btn.setGraphic(finalContent)));
+            timeline.getKeyFrames().add(new KeyFrame(Duration.millis(500 * (i + 1)), ae -> btn.setGraphic(finalContent)));
         }
-        timeline.getKeyFrames().add(new KeyFrame(Duration.millis(500 * (bombButtons.size() + 2)), _ -> {}));
+        timeline.getKeyFrames().add(new KeyFrame(Duration.millis(500 * (bombButtons.size() + 2)), ae -> {}));
         timeline.play();
     }
 
